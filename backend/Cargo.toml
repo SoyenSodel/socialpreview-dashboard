@@ -1,0 +1,46 @@
+[package]
+name = "socialpreview-backend"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Web framework
+axum = { version = "0.7", features = ["macros", "multipart"] }
+axum-extra = { version = "0.9", features = ["cookie"] }
+tokio = { version = "1", features = ["full"] }
+tower = "0.4"
+tower-http = { version = "0.5", features = ["cors", "trace", "limit", "fs"] }
+tower_governor = "0.4"
+
+# Database
+sqlx = { version = "0.7", features = ["runtime-tokio-rustls", "sqlite", "uuid", "chrono", "migrate"] }
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Authentication & Security
+jsonwebtoken = "9.2"
+argon2 = "0.5"
+totp-rs = { version = "5.6", features = ["qr", "otpauth", "gen_secret"] }
+qrcode = "0.14"
+base64 = "0.22"
+
+# Validation
+validator = { version = "0.16", features = ["derive"] }
+
+# Environment & Configuration
+dotenvy = "0.15"
+
+# Utilities
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1.6", features = ["v4", "serde"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true

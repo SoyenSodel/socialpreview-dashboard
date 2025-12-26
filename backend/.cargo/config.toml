@@ -1,0 +1,5 @@
+# Cargo build configuration
+# For cross-compilation use: cargo zigbuild --release --target x86_64-unknown-linux-gnu
+
+[build]
+jobs = 4
